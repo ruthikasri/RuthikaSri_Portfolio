@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 2rem auto;
+        }
+
+        .about, .skills, .projects, .contact {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+
+        .skills ul {
+            list-style: none;
+        }
+
+        .skills ul li {
+            background: #f4f4f4;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .projects .project {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            background: #f4f4f4;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RUTHIKA SRI C M</h1>
+        <p>Passionate Developer | Innovator | Problem Solver</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <p>Welcome! I am a dedicated and passionate developer with expertise spanning web development, machine learning, IoT technology, and electronics. My diverse skill set allows me to design and implement innovative solutions across multiple domains, blending software and hardware seamlessly. I thrive on tackling complex challenges, whether it’s building intelligent systems, developing intuitive web interfaces, or crafting IoT-enabled devices that transform everyday experiences. My goal is to create impactful, efficient, and sustainable solutions that address real-world problems and make a meaningful difference. With a strong focus on continuous learning and a collaborative spirit, I am excited to contribute to projects that push boundaries and inspire innovation.
+            </p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>JAVA, PYTHON, C, C++</li>
+                <li>IOT</li>
+                <li>Embedded Systems</li>
+                <li>Machine Learning</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project">
+                <h3>Mindwell Care</h3>
+                <p>Mindwell Care: Mental Health Monitoring and Assistance Website**  
+
+                    Mindwell Care is an online platform designed to assess the mental health of users through interactive questionnaires, mood tracking, and analytics. The website provides insights into a user’s mental well-being and identifies potential signs of stress, anxiety, or depression. Based on the results, it offers personalized self-care tips and, if necessary, suggests contacting a licensed therapist. The platform aims to promote mental health awareness, provide early detection of issues, and bridge the gap between individuals and professional mental health care.</p>
+            </div>
+            <div class="project">
+                <h3>Automatic Rain Protection System for Clothes</h3>
+                <p>Automatic Rain Protection System for Clothes  
+
+                    This project automates the protection of clothes drying on racks during unexpected rain. The system uses rain sensors to detect rainfall and a motorized mechanism to cover the clothes with a protective shield or retractable roof. Once the rain stops, the system automatically uncovers the clothes to resume drying. Powered by microcontrollers, the setup ensures efficient operation with minimal user intervention. This project is a practical solution to prevent clothes from getting wet, saving time and effort while enhancing convenience, especially in unpredictable weather conditions.</p>
+            </div>
+            <div class="project">
+                <h3>Detecting the Under-loading and Over-loading of Railway Wagons using IOT.</h3>
+                <p>This system leverages Internet of Things (IoT) technology to monitor the weight of railway wagons in real time. It involves integrating load sensors on wagons to measure the weight and transmit data to a central system via IoT devices. The system ensures wagons are neither under-loaded (wasting transportation capacity) nor overloaded (causing potential safety hazards and structural damage). Alerts are generated if weight thresholds are exceeded or not met, ensuring compliance with operational limits. The collected data can also be used for predictive maintenance, efficient logistics planning, and improving railway safety and productivity.
+                </p>
+            </div>
+            <div class="project">
+                <h3>Detection of Cardio Vascular Disorder using Machine Learning</h3>
+                <p>This approach uses machine learning algorithms to analyze medical data, such as patient history, lifestyle, and diagnostic reports (e.g., ECG, blood pressure, cholesterol levels), to identify patterns and risk factors associated with cardiovascular disorders. Techniques like decision trees, support vector machines, or neural networks are trained on large datasets to predict the likelihood of conditions such as heart attacks or arrhythmias. Machine learning improves the accuracy and speed of diagnosis, enabling early detection, personalized treatment, and better patient outcomes, while reducing the workload on healthcare professionals.
+                </p>
+            </div>
+                
+                <div class="project">
+                <h3>Detection of cardio Vascular Disorder using E-Nose Technology.</h3>
+                <p>
+                    E-Nose (Electronic Nose) technology is an innovative approach for detecting cardiovascular disorders by analyzing volatile organic compounds (VOCs) in exhaled breath. VOCs serve as biomarkers for metabolic changes associated with heart diseases. The E-Nose system uses gas sensors to detect and classify these VOCs, creating a unique "breathprint" for cardiovascular conditions. Advanced algorithms and machine learning techniques process the sensor data to identify patterns linked to disorders such as atherosclerosis, heart failure, or myocardial infarction. This non-invasive, cost-effective method provides a rapid diagnostic tool, improving early detection and patient care.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>Email: ruthikasricm@gmail.com</p>
+            <p>Phone: 7418532277</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ruthika-sri-c-m-9bb002281/" target="_blank">linkedin.com/in/yourprofile</a></p>
+            <p>Github: <a href="https://github.com/ruthikasri" target="_blank">github.com/in/yourprofile</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

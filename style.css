@@ -326,19 +326,35 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
   .intro {
     flex-direction: column;
     text-align: center;
   }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
   .about-content {
     flex-direction: column;
     text-align: center;
   }
+
   .project-card {
     flex-direction: column;
   }
 }
+

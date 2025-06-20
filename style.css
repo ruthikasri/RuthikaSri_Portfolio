@@ -329,23 +329,29 @@ footer {
   nav {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
-  .logo {
-    margin-bottom: 0.8rem;
+  nav .logo {
+    width: 100%;
+    margin-bottom: 1rem;
     text-align: center;
   }
 
   nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
   }
 
   .intro {
     flex-direction: column;
     text-align: center;
+  }
+
+  .intro .text {
+    align-items: center;
+    margin-bottom: 1.5rem;
   }
 
   .about-content {

@@ -331,53 +331,16 @@ footer {
     align-items: center;
   }
 
-  .logo {
-    margin-bottom: 0.8rem;
-    text-align: center;
-  }
-
-  nav ul {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 0.8rem 1.2rem;
-  justify-content: center;
-  text-align: center;
-}
-
-  .intro {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project-card {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
   nav .logo {
-    margin-bottom: 1rem;
     text-align: center;
-    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
   }
 
   nav ul {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, auto); /* First row: 4 items */
     justify-content: center;
-    gap: 0.5rem 1rem;
-    padding: 0;
-    margin: 0;
+    gap: 0.7rem 1.2rem;
     text-align: center;
   }
 
@@ -385,28 +348,25 @@ footer {
     list-style: none;
   }
 
-  nav ul li:nth-child(5),
-  nav ul li:nth-child(6),
-  nav ul li:nth-child(7) {
-    grid-column: span 1;
-  }
-
   nav ul li a {
     display: inline-block;
-    padding: 0.4rem 0.7rem;
     font-size: 0.95rem;
-    border-radius: 4px;
-    background: #fff;
-    color: #333;
+    padding: 0.4rem 0.7rem;
     text-decoration: none;
+    color: #333;
+    border-radius: 4px;
     transition: background 0.3s;
   }
 
   nav ul li a:hover {
-    background-color: #e6f0f8;
+    background-color: #e8f0fa;
   }
 
-  nav ul li:nth-child(n+5) {
+  /* Force last 3 items to row 2 */
+  nav ul li:nth-child(5),
+  nav ul li:nth-child(6),
+  nav ul li:nth-child(7) {
+    grid-column: span 1;
     justify-self: center;
   }
 }

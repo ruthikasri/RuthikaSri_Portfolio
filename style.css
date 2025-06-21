@@ -358,3 +358,24 @@ footer {
     flex-direction: column;
   }
 }
+
+@media (max-width: 480px) {
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 2 columns instead of vertical stack */
+    gap: 0.5rem 1.2rem;
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .logo {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+
